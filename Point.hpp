@@ -1,9 +1,11 @@
-/* Generic dimension-independent implementation of a point class
- */
+// Generic dimension-independent implementation of a point class
 
 #pragma once
 
+#include <ostream>
+#include <cmath>
 #include <vector>
+#include <cassert>
 
 namespace angem
 {
