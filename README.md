@@ -34,5 +34,21 @@ int main()
   std::cout << dot(p, p1) << std::endl;
   std::cout << p*p1 << std::endl;
 
+  // compute distance between two points
+  std::cout << p.distance(p1) << std::endl; // 2.23607
+  std::cout << distance(p1, p) << std::endl;
+
+  // meny ways to access coordinates
+  std::cout << p.x() << std::endl;  // 2
+  std::cout << p[1] << std::endl;  // 3
+  std::cout << p(2) << std::endl;  // 4
+
+  // there is a difference between access operators:
+  p.x() += 1   // this changes p
+  std::cout << p << std::endl;  // 3       3       4
+  p[0] -= 1   // this also changes p
+  std::cout << p << std::endl;  // 2       3       4
+  // the following would give an error:
+  // p(0) -= 3
 }
 ```
